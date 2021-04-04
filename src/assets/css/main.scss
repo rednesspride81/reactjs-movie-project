@@ -4,6 +4,11 @@
     font-family: OpenSans;
     src: url(../font/OpenSans-Regular.ttf);
 }
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
 
 * {
     box-sizing: border-box;
@@ -12,7 +17,7 @@
 }
 
 body {
-    font-family: OpenSans;
+    font-family: OpenSans, sans-serif;
     @include styleText($body-color, $body-fs, $fw-normal);
     background-color: $body-bg-color;
 }

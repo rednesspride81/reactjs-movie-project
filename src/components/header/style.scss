@@ -19,8 +19,9 @@ header {
                     }
                 }
                 .nav-link {
-                    @include styleText($color-white-1, $body-fs, $fw-bold);
+                    @include styleText($color-white-1, $body-fs, bold);
                     padding: 5px;
+                    text-transform: uppercase;
                 }
             }
         }
