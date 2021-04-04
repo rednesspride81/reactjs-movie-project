@@ -1,0 +1,26 @@
+$color-primary: #00dbde;
+$color-secondary: #fc00ff;
+$color-white: #fff;
+$color-white-1: #e9eeff;
+$color-black: #000;
+$color-gray-1: #333333;
+$color-gray-2: #7f7f7f;
+$color-gray-3: #d9d9d9;
+$color-trans: transparent;
+$body-color: #dbe2fb;
+$body-bg-color: #001232;
+
+// Font size
+$body-fs: 16px;
+
+// Font weigth
+$fw-normal: 400;
+$fw-light: 300;
+$fw-bold: 700;
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+);

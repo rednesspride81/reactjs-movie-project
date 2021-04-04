@@ -1,0 +1,18 @@
+@import "./mixin.scss";
+@import "./variable.scss";
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: OpenSans;
+    @include styleText($body-color, $body-fs, $fw-normal);
+    background-color: $body-bg-color;
+}

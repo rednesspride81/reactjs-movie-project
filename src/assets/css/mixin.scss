@@ -1,0 +1,25 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+// $screen: tên màn hình cần responsive
+@mixin responsive($screen) {
+    // Kiểm tra tên màn hình có tồn tại hay không
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        // xử lý nếu tên màn hình hợp lệ
+        // Lấy giá trị màn hình tìm được
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+
+        //Responsive
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "Màn hình chưa khai báo";
+    }
+}
